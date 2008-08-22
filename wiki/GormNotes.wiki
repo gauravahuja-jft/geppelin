@@ -5,7 +5,7 @@ General Notes
 = Details =
 == addXXX has been deprecated ==
 After a couple hours of frustration trying to get a parent/child relationship working, I realized the Grails book has deprecated methods.
-Instead of *addXXX* use *addToXXXs*
+* Instead of *addXXX* use *addToXXXs*
 
 {{{
 def g = new UserGroup(name:'everyone');
