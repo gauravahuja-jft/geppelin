@@ -1,5 +1,8 @@
 class Message {
 
-  String text;
-  Date createdOn = new Date();
+    static belongsTo = User
+    
+    User user;
+    String text;
+    Date createdOn = new Date();
 }
