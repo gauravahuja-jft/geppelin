@@ -79,4 +79,20 @@ class UserController {
             render(view:'create',model:[user:user])
         }
     }
+
+    def login = {
+        
+    }
+
+    def handleLogin = {
+        def user = User.findByLogin( params.login)
+        if (user && user.password == params.password) {
+            session.user = user
+            redirect(uri : '')
+        } else {
+            flash.message = "username or password is incorrect for ${params.login}"
+            redirect(action: login)
+        }
+
+    }
 }
