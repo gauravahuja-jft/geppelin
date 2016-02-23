@@ -1,0 +1,1 @@
+The purpose of this application is really to learn the intricacies of Grails.  We want to build a Twitter+ app in Grails that handles discussions better and the ability to post to groups
